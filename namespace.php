@@ -260,7 +260,8 @@ class refnotes_namespace {
      * Splits full note name into namespace and name components
      */
     public static function parseName($name) {
-        $pos = strrpos($name, ':');
+		$name = trim($name,'[]');	// hack to allow links as note names.  This will strip [[]] surrounding names [Rik, 2013-07-05]
+		$pos = strrpos($name, ':');
         if ($pos !== false) {
             $namespace = self::canonizeName(substr($name, 0, $pos));
             $name = substr($name, $pos + 1);
