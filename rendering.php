@@ -492,6 +492,11 @@ class refnotes_basic_renderer extends refnotes_renderer_base {
                 $result .= ' left';
                 break;
 
+			// added hanging [Rik, 2013-07-06]
+            case 'hanging':
+                $result .= ' hanging';
+                break;
+
             default:
                 $result .= ' justify';
                 break;

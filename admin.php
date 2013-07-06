@@ -400,7 +400,7 @@ class refnotes_config_namespaces extends refnotes_config_list_section {
             ),
             'note-text-align' => array(
                 'class' => 'select',
-                'option' => array('justify', 'left', 'inherit')
+                'option' => array('justify', 'left', 'hanging', 'inherit') // added hanging [Rik, 2013-07-06]
             ),
             'note-font-size' => array(
                 'class' => 'select',

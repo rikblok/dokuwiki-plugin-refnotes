@@ -24,9 +24,14 @@ div.dokuwiki div.refnotes div.note.small {
     font-size: 70%;
 }
 
+/* added hanging [Rik, 2013-07-06] */
+div.dokuwiki div.refnotes div.note.hanging {
+    text-align: justify;
+	text-indent: -8em; margin-left: 8em;
+}
+
 div.dokuwiki div.refnotes div.note.justify {
     text-align: justify;
-	text-indent: -3em; margin-left: 3em;
 }
 
 div.dokuwiki div.refnotes div.note.left {
